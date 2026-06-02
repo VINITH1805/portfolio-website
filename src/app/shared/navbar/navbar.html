@@ -1,0 +1,23 @@
+<nav class="navbar">
+      <div class="nav-container">
+        <div routerLink="/" class="nav-logo">VS</div>
+        
+        <button class="menu-toggle" (click)="toggleMenu()" [attr.aria-expanded]="mobileMenuOpen()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+ 
+        <div class="nav-menu" [class.open]="mobileMenuOpen()">
+          <div class="nav-links">
+            <a routerLink="/skills" class="nav-link" (click)="closeMenu()">Skills</a>
+            <a routerLink="/experience" class="nav-link" (click)="closeMenu()">Experience</a>
+            <a routerLink="/projects" class="nav-link" (click)="closeMenu()">Projects</a>
+            <a routerLink="/contact" class="nav-link" (click)="closeMenu()">Contact</a>
+            <button class="btn btn-cv" (click)="downloadCVAndClose()">
+              <i class="icon-download"></i> CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>

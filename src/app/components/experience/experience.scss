@@ -1,0 +1,138 @@
+.experience {
+    padding: 6rem 3rem;
+    background: #0b0c0f;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lbl {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.74rem;
+    color: #00e5a0;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    color: #f0f2f5;
+}
+
+.sub {
+    color: #8892a4;
+    font-size: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.exp-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 2rem;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.exp-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.exp-period {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.79rem;
+    color: #8892a4;
+    padding-top: 4px;
+    line-height: 1.7;
+}
+
+.exp-period strong {
+    color: #f0f2f5;
+    font-size: 0.8rem;
+}
+
+.exp-co {
+    font-size: 1.12rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #f0f2f5;
+}
+
+.exp-role {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    color: #00e5a0;
+    font-size: 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.exp-desc {
+    color: #8892a4;
+    font-size: 0.9rem;
+    line-height: 1.75;
+}
+
+.exp-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 1rem;
+}
+
+.etag {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+    background: rgba(0, 229, 160, 0.08);
+    border: 1px solid rgba(0, 229, 160, 0.2);
+    border-radius: 5px;
+    color: #00e5a0;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 4rem 2rem;
+  }
+  
+  .exp-item {
+    grid-template-columns: 140px 1fr;
+    gap: 1.5rem;
+    padding: 1.8rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .experience {
+    padding: 3rem 1.5rem;
+  }
+  
+  .exp-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1.5rem 0;
+  }
+  
+  .exp-desc {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 2.5rem 1rem;
+  }
+  
+  .exp-item {
+    padding: 1.2rem 0;
+  }
+}

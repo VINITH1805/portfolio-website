@@ -1,0 +1,18 @@
+<section class="skills">
+    <div class="section-content">
+        <p class="lbl">What I work with</p>
+        <h2>Technical Skills</h2>
+        <p class="sub">A complete full stack across backend, frontend, cloud, and tooling.</p>
+
+        <div class="skills-grid">
+            <div class="skill-card" *ngFor="let skillGroup of skills">
+                <div class="skill-cat">{{ skillGroup.category }}</div>
+                <div class="tags">
+                    <span class="tag" *ngFor="let skill of skillGroup.skills">
+                        {{ skill }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

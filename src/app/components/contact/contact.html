@@ -1,0 +1,19 @@
+<section class="contact">
+    <div class="contact-inner">
+        <p class="lbl">Let's talk</p>
+        <h2>Open to Roles</h2>
+        <p class="contact-desc">
+            Looking for a Full Stack Developer with deep .NET and Angular
+            experience? I'd love to connect.
+        </p>
+        <div class="contact-links">
+            <a *ngFor="let link of contactLinks" [href]="link.href"
+                [target]="link.type === 'social' ? '_blank' : '_self'" class="clink">
+                <span class="clink-icon">
+                    <i [class]="'icon-' + link.icon"></i>
+                </span>
+                {{ link.label }}
+            </a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,20 @@
+<section class="projects">
+    <div class="section-content">
+        <p class="lbl">What I've built</p>
+        <h2>Key Projects</h2>
+        <p class="sub">Enterprise applications across insurance and banking industries.</p>
+
+        <div class="proj-grid">
+            <div class="proj-card" *ngFor="let project of projects">
+                <div class="proj-num">{{ project.number }} — {{ project.domain }}</div>
+                <div class="proj-name">{{ project.name }}</div>
+                <p class="proj-desc">{{ project.description }}</p>
+                <div class="tags">
+                    <span class="tag" *ngFor="let tech of project.technologies">
+                        {{ tech }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

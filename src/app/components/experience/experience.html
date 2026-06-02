@@ -1,0 +1,27 @@
+<section class="experience">
+    <div class="section-content">
+        <p class="lbl">Where I've worked</p>
+        <h2>Experience</h2>
+        <p class="sub">Enterprise delivery across insurance and banking domains.</p>
+
+        <div class="exp-list">
+            <div class="exp-item" *ngFor="let exp of experience">
+                <div class="exp-period">
+                    {{ exp.period.start }}<br />–<br />
+                    {{ exp.period.end }}<br /><br />
+                    <strong>{{ exp.company }}</strong>
+                </div>
+                <div>
+                    <div class="exp-co">{{ exp.company }}</div>
+                    <div class="exp-role">{{ exp.role }}</div>
+                    <p class="exp-desc">{{ exp.description }}</p>
+                    <div class="exp-tags">
+                        <span class="etag" *ngFor="let tech of exp.technologies">
+                            {{ tech }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
